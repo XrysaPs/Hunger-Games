@@ -1,13 +1,3 @@
-/* Στοιχεία φοιτητών:
-    Τσιμρόγλου Στυλιανός
-        ΑΕΜ: 9468
-        web-mail: stsimrog@ece.auth.gr
-        τηλέφωνο:6977030504
-    Ψυρούκη Χρυσούλα
-        ΑΕΜ:9446
-        web-mail:chrypsyr@ece.auth.gr
-        τηλέφωνο:6987242584
- */
 public class Food{
 	private int id;
 	private int x;
@@ -15,7 +5,7 @@ public class Food{
 	private int points;
 	
 	public Food() {
-		//κενός  constructor
+		//ΓªΓ¥Γ­ΓΌΓ²  constructor
 		id= 0;
 		x = 0;
 		y = 0;
@@ -23,7 +13,7 @@ public class Food{
 	}
 	
 	public Food(int id, int x, int y, int points) {
-		//constructor με ορίσματα
+		//constructor Γ¬Γ¥ Γ―Γ±ΓΓ³Γ¬Γ΅Γ΄Γ΅
 		this.id = id;
 		this.x = x;
 		this.y = y;
@@ -31,14 +21,14 @@ public class Food{
 	}
 	
 	public Food(Food a) {
-		//αντικείμενο τύπου Food
+		//Γ΅Γ­Γ΄Γ©ΓªΓ¥ΓΓ¬Γ¥Γ­Γ― Γ΄Γ½Γ°Γ―Γµ Food
 		this.id = a.id;
 		this.x = a.x;
 		this.y = a.y;
 		this.points = a.points;
 	}
 	
-	void setId(int id) {//setters των μεταβλητών της κλάσης 
+	void setId(int id) {//setters Γ΄ΓΉΓ­ Γ¬Γ¥Γ΄Γ΅ΓΆΓ«Γ§Γ΄ΓΎΓ­ Γ΄Γ§Γ² ΓªΓ«ΓΓ³Γ§Γ² 
 		this.id = id;
 	}
 	
@@ -53,7 +43,7 @@ public class Food{
 		this.points = points;
 	}
 	
-	int getId() {//getters των μεταβλητών της κλάσης
+	int getId() {//getters Γ΄ΓΉΓ­ Γ¬Γ¥Γ΄Γ΅ΓΆΓ«Γ§Γ΄ΓΎΓ­ Γ΄Γ§Γ² ΓªΓ«ΓΓ³Γ§Γ²
 		return id;
 	}
 	
