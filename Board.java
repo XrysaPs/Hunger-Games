@@ -1,13 +1,3 @@
-/* Στοιχεία φοιτητών:
-    Τσιμρόγλου Στυλιανός
-        ΑΕΜ: 9468
-        web-mail: stsimrog@ece.auth.gr
-        τηλέφωνο:6977030504
-    Ψυρούκη Χρυσούλα
-        ΑΕΜ:9446
-        web-mail:chrypsyr@ece.auth.gr
-        τηλέφωνο:6987242584
- */
 import java.awt.Graphics;
 import java.util.Random;
 
@@ -30,7 +20,7 @@ public class Board implements Cloneable{
 	    }
 	}
 	
-	public Board() {//κενός constructor 
+	public Board() {//ΓªΓ¥Γ­ΓΌΓ² constructor 
 		N = 0;
 		M = 0;
 		W = 0;
@@ -44,7 +34,7 @@ public class Board implements Cloneable{
 		traps = new Trap[T];
 	}
 	
-	public Board(int N, int M, int W, int F, int T) {//constructor με ορίσματα 
+	public Board(int N, int M, int W, int F, int T) {//constructor Γ¬Γ¥ Γ―Γ±ΓΓ³Γ¬Γ΅Γ΄Γ΅ 
 		if (N==M) {
 			this.M = M;
 		}
@@ -61,7 +51,7 @@ public class Board implements Cloneable{
 		traps = new Trap[T];
 	}
 	
-	public Board(Board b) {//αντικείμενο τύπου Board
+	public Board(Board b) {//Γ΅Γ­Γ΄Γ©ΓªΓ¥ΓΓ¬Γ¥Γ­Γ― Γ΄Γ½Γ°Γ―Γµ Board
 		this.N = b.N;
 		this.M = b.N;
 		this.W = b.W;
@@ -69,7 +59,7 @@ public class Board implements Cloneable{
 		this.T = b.T;
 	}
 	
-	public int getN() {//getters των μεταβλητών της κλάσης 
+	public int getN() {//getters Γ΄ΓΉΓ­ Γ¬Γ¥Γ΄Γ΅ΓΆΓ«Γ§Γ΄ΓΎΓ­ Γ΄Γ§Γ² ΓªΓ«ΓΓ³Γ§Γ² 
 		return N;
 	}
 	public int getM() {
@@ -84,7 +74,7 @@ public class Board implements Cloneable{
 	public int getT() {
 		return T;
 	}
-	public int[][] getWeaponAreaLimits() {//getters για τους πίνακες της κλάσης
+	public int[][] getWeaponAreaLimits() {//getters Γ£Γ©Γ΅ Γ΄Γ―ΓµΓ² Γ°ΓΓ­Γ΅ΓªΓ¥Γ² Γ΄Γ§Γ² ΓªΓ«ΓΓ³Γ§Γ²
 		return weaponAreaLimits;
 	}
 	public int[][] getFoodAreaLimits(){
@@ -93,7 +83,7 @@ public class Board implements Cloneable{
 	public int[][] getTrapAreaLimits(){
 		return trapAreaLimits;
 	}
-	public Weapon[] getWeapons() {//getters για τους πίνακες αντικειμένων της κλάσης
+	public Weapon[] getWeapons() {//getters Γ£Γ©Γ΅ Γ΄Γ―ΓµΓ² Γ°ΓΓ­Γ΅ΓªΓ¥Γ² Γ΅Γ­Γ΄Γ©ΓªΓ¥Γ©Γ¬ΓΓ­ΓΉΓ­ Γ΄Γ§Γ² ΓªΓ«ΓΓ³Γ§Γ²
 		return weapons;
 	}
 	public Food[] getFood() {
@@ -103,7 +93,7 @@ public class Board implements Cloneable{
 		return traps;
 	}
 	
-	public void setN(int N) {//setters για τις μεταβλητές της κλάσης 
+	public void setN(int N) {//setters Γ£Γ©Γ΅ Γ΄Γ©Γ² Γ¬Γ¥Γ΄Γ΅ΓΆΓ«Γ§Γ΄ΓΓ² Γ΄Γ§Γ² ΓªΓ«ΓΓ³Γ§Γ² 
 		this.N = N;
 	}
 	public void setM(int M) {
@@ -124,7 +114,7 @@ public class Board implements Cloneable{
 	public void setT(int T) {
 		this.T = T;
 	}
-	public void setWeaponAreaLimits(int[][] x) {//setters για τους πίνακες  της κλάσης
+	public void setWeaponAreaLimits(int[][] x) {//setters Γ£Γ©Γ΅ Γ΄Γ―ΓµΓ² Γ°ΓΓ­Γ΅ΓªΓ¥Γ²  Γ΄Γ§Γ² ΓªΓ«ΓΓ³Γ§Γ²
 		weaponAreaLimits = x;
 	}
 	public void setFoodAreaLimits(int[][] y) {
@@ -133,7 +123,7 @@ public class Board implements Cloneable{
 	public void setTrapAriaLimits(int[][] z) {
 		trapAreaLimits = z;
 	}
-	public void setWeapons(Weapon[] w) { //setters για τους πίνακες αντικειμένων της κλάσης{
+	public void setWeapons(Weapon[] w) { //setters Γ£Γ©Γ΅ Γ΄Γ―ΓµΓ² Γ°ΓΓ­Γ΅ΓªΓ¥Γ² Γ΅Γ­Γ΄Γ©ΓªΓ¥Γ©Γ¬ΓΓ­ΓΉΓ­ Γ΄Γ§Γ² ΓªΓ«ΓΓ³Γ§Γ²{
 		weapons = w;
 	}
 	public void setFood(Food[] f) {
@@ -143,18 +133,18 @@ public class Board implements Cloneable{
 		traps = t;
 	}
 	
-	public void createRandomWeapon() {/*δημιουργία όπλων και τοποθέτηση τους σε τυχαίες θέσεις λαμβάνοντας υπ' όψιν
-		α)να μην συμπέσει με άλλα όπλα,παγίδες,τρόφιμα,β)την περιοχή ορίων των όπλων */
+	public void createRandomWeapon() {/*Γ¤Γ§Γ¬Γ©Γ―ΓµΓ±Γ£ΓΓ΅ ΓΌΓ°Γ«ΓΉΓ­ ΓªΓ΅Γ© Γ΄Γ―Γ°Γ―Γ¨ΓΓ΄Γ§Γ³Γ§ Γ΄Γ―ΓµΓ² Γ³Γ¥ Γ΄ΓµΓ·Γ΅ΓΓ¥Γ² Γ¨ΓΓ³Γ¥Γ©Γ² Γ«Γ΅Γ¬ΓΆΓΓ­Γ―Γ­Γ΄Γ΅Γ² ΓµΓ°' ΓΌΓΈΓ©Γ­
+		Γ΅)Γ­Γ΅ Γ¬Γ§Γ­ Γ³ΓµΓ¬Γ°ΓΓ³Γ¥Γ© Γ¬Γ¥ ΓΓ«Γ«Γ΅ ΓΌΓ°Γ«Γ΅,Γ°Γ΅Γ£ΓΓ¤Γ¥Γ²,Γ΄Γ±ΓΌΓ¶Γ©Γ¬Γ΅,ΓΆ)Γ΄Γ§Γ­ Γ°Γ¥Γ±Γ©Γ―Γ·Γ Γ―Γ±ΓΓΉΓ­ Γ΄ΓΉΓ­ ΓΌΓ°Γ«ΓΉΓ­ */
 		Random rand = new Random(); 
-		//6 τυχαίες μεταβλητές που αντιπροσωπεύουν τα ζεύγη των τυχαίων συντεταγμένων για καθένα από τους τύπους των όπλων
+		//6 Γ΄ΓµΓ·Γ΅ΓΓ¥Γ² Γ¬Γ¥Γ΄Γ΅ΓΆΓ«Γ§Γ΄ΓΓ² Γ°Γ―Γµ Γ΅Γ­Γ΄Γ©Γ°Γ±Γ―Γ³ΓΉΓ°Γ¥Γ½Γ―ΓµΓ­ Γ΄Γ΅ Γ¦Γ¥Γ½Γ£Γ§ Γ΄ΓΉΓ­ Γ΄ΓµΓ·Γ΅ΓΓΉΓ­ Γ³ΓµΓ­Γ΄Γ¥Γ΄Γ΅Γ£Γ¬ΓΓ­ΓΉΓ­ Γ£Γ©Γ΅ ΓªΓ΅Γ¨ΓΓ­Γ΅ Γ΅Γ°ΓΌ Γ΄Γ―ΓµΓ² Γ΄Γ½Γ°Γ―ΓµΓ² Γ΄ΓΉΓ­ ΓΌΓ°Γ«ΓΉΓ­
 		int randomX1=0;
 		int randomY1=0;
 		int randomX2=0;
 		int randomY2=0;
 		int randomX3=0;
 		int randomY3=0;
-		int i=0;//δείκτης ελέγχου
-		int s;//δείκτης ελέγχου
+		int i=0;//Γ¤Γ¥ΓΓªΓ΄Γ§Γ² Γ¥Γ«ΓΓ£Γ·Γ―Γµ
+		int s;//Γ¤Γ¥ΓΓªΓ΄Γ§Γ² Γ¥Γ«ΓΓ£Γ·Γ―Γµ
 		int id;
 		for (int n = 1; n<=2; n++) {
 			id = 1;
@@ -235,13 +225,13 @@ public class Board implements Cloneable{
 		}
 	}
 
-	public void createRandomTrap() {/*δημιουργία παγίδων και τοποθέτηση τους σε τυχαίες θέσεις λαμβάνοντας υπ' όψιν
-		α)να μην συμπέσει με άλλες παγίδες, όπλα και τρόφιμα,β)την περιοχή ορίων των παγίδων  */
+	public void createRandomTrap() {/*Γ¤Γ§Γ¬Γ©Γ―ΓµΓ±Γ£ΓΓ΅ Γ°Γ΅Γ£ΓΓ¤ΓΉΓ­ ΓªΓ΅Γ© Γ΄Γ―Γ°Γ―Γ¨ΓΓ΄Γ§Γ³Γ§ Γ΄Γ―ΓµΓ² Γ³Γ¥ Γ΄ΓµΓ·Γ΅ΓΓ¥Γ² Γ¨ΓΓ³Γ¥Γ©Γ² Γ«Γ΅Γ¬ΓΆΓΓ­Γ―Γ­Γ΄Γ΅Γ² ΓµΓ°' ΓΌΓΈΓ©Γ­
+		Γ΅)Γ­Γ΅ Γ¬Γ§Γ­ Γ³ΓµΓ¬Γ°ΓΓ³Γ¥Γ© Γ¬Γ¥ ΓΓ«Γ«Γ¥Γ² Γ°Γ΅Γ£ΓΓ¤Γ¥Γ², ΓΌΓ°Γ«Γ΅ ΓªΓ΅Γ© Γ΄Γ±ΓΌΓ¶Γ©Γ¬Γ΅,ΓΆ)Γ΄Γ§Γ­ Γ°Γ¥Γ±Γ©Γ―Γ·Γ Γ―Γ±ΓΓΉΓ­ Γ΄ΓΉΓ­ Γ°Γ΅Γ£ΓΓ¤ΓΉΓ­  */
 		Random rand = new Random();
 		for (int i=0; i<T; i++) {
-			//2 τυχαίες μεταβλητές που αντιπροσωπεύουν τα ζεύγη των τυχαίων συντεταγμένων για καθέ παγίδα 
+			//2 Γ΄ΓµΓ·Γ΅ΓΓ¥Γ² Γ¬Γ¥Γ΄Γ΅ΓΆΓ«Γ§Γ΄ΓΓ² Γ°Γ―Γµ Γ΅Γ­Γ΄Γ©Γ°Γ±Γ―Γ³ΓΉΓ°Γ¥Γ½Γ―ΓµΓ­ Γ΄Γ΅ Γ¦Γ¥Γ½Γ£Γ§ Γ΄ΓΉΓ­ Γ΄ΓµΓ·Γ΅ΓΓΉΓ­ Γ³ΓµΓ­Γ΄Γ¥Γ΄Γ΅Γ£Γ¬ΓΓ­ΓΉΓ­ Γ£Γ©Γ΅ ΓªΓ΅Γ¨Γ Γ°Γ΅Γ£ΓΓ¤Γ΅ 
 			int randomX, randomY;
-			int t;//δείκτης ελέγχου
+			int t;//Γ¤Γ¥ΓΓªΓ΄Γ§Γ² Γ¥Γ«ΓΓ£Γ·Γ―Γµ
 			do {
 				do {
 					t=i;
@@ -268,13 +258,13 @@ public class Board implements Cloneable{
 			traps[i] = trap;
 		}
 	}
-	public void createRandomFood() {/*δημιουργία εφοδίων  και τοποθέτηση τους σε τυχαίες θέσεις λαμβάνοντας υπ' όψιν
-		α)να μην συμπέσει με άλλα εφόδια ,όπλα και παγίδες,β)την περιοχή ορίων των  εφοδίων */
+	public void createRandomFood() {/*Γ¤Γ§Γ¬Γ©Γ―ΓµΓ±Γ£ΓΓ΅ Γ¥Γ¶Γ―Γ¤ΓΓΉΓ­  ΓªΓ΅Γ© Γ΄Γ―Γ°Γ―Γ¨ΓΓ΄Γ§Γ³Γ§ Γ΄Γ―ΓµΓ² Γ³Γ¥ Γ΄ΓµΓ·Γ΅ΓΓ¥Γ² Γ¨ΓΓ³Γ¥Γ©Γ² Γ«Γ΅Γ¬ΓΆΓΓ­Γ―Γ­Γ΄Γ΅Γ² ΓµΓ°' ΓΌΓΈΓ©Γ­
+		Γ΅)Γ­Γ΅ Γ¬Γ§Γ­ Γ³ΓµΓ¬Γ°ΓΓ³Γ¥Γ© Γ¬Γ¥ ΓΓ«Γ«Γ΅ Γ¥Γ¶ΓΌΓ¤Γ©Γ΅ ,ΓΌΓ°Γ«Γ΅ ΓªΓ΅Γ© Γ°Γ΅Γ£ΓΓ¤Γ¥Γ²,ΓΆ)Γ΄Γ§Γ­ Γ°Γ¥Γ±Γ©Γ―Γ·Γ Γ―Γ±ΓΓΉΓ­ Γ΄ΓΉΓ­  Γ¥Γ¶Γ―Γ¤ΓΓΉΓ­ */
 		Random rand = new Random();
 		for (int i=0; i<F; i++) {
-			//2 τυχαίες μεταβλητές που αντιπροσωπεύουν τα ζεύγη των τυχαίων συντεταγμένων για καθέ εφόδιο
+			//2 Γ΄ΓµΓ·Γ΅ΓΓ¥Γ² Γ¬Γ¥Γ΄Γ΅ΓΆΓ«Γ§Γ΄ΓΓ² Γ°Γ―Γµ Γ΅Γ­Γ΄Γ©Γ°Γ±Γ―Γ³ΓΉΓ°Γ¥Γ½Γ―ΓµΓ­ Γ΄Γ΅ Γ¦Γ¥Γ½Γ£Γ§ Γ΄ΓΉΓ­ Γ΄ΓµΓ·Γ΅ΓΓΉΓ­ Γ³ΓµΓ­Γ΄Γ¥Γ΄Γ΅Γ£Γ¬ΓΓ­ΓΉΓ­ Γ£Γ©Γ΅ ΓªΓ΅Γ¨Γ Γ¥Γ¶ΓΌΓ¤Γ©Γ―
 			int randomX, randomY;
-			int t;//δείκτης ελέγχου
+			int t;//Γ¤Γ¥ΓΓªΓ΄Γ§Γ² Γ¥Γ«ΓΓ£Γ·Γ―Γµ
 			do {
 				do {
 					t=i;
@@ -302,19 +292,19 @@ public class Board implements Cloneable{
 		}
 	}
 	
-	public void createBoard() {/*δημιουργούμε το ταμπλό του παιχνιδίου  */
+	public void createBoard() {/*Γ¤Γ§Γ¬Γ©Γ―ΓµΓ±Γ£Γ―Γ½Γ¬Γ¥ Γ΄Γ― Γ΄Γ΅Γ¬Γ°Γ«ΓΌ Γ΄Γ―Γµ Γ°Γ΅Γ©Γ·Γ­Γ©Γ¤ΓΓ―Γµ  */
 		createRandomWeapon();
 		createRandomFood();
 		createRandomTrap();
 	}
 	
-	public void resizeBoard(Player p1, Player p2) {//αλλάζει το μέγεθος του πίνακα αφαιρώντας περιμετρικά ένα δαχτυλίδι από το ταμπλό
+	public void resizeBoard(Player p1, Player p2) {//Γ΅Γ«Γ«ΓΓ¦Γ¥Γ© Γ΄Γ― Γ¬ΓΓ£Γ¥Γ¨Γ―Γ² Γ΄Γ―Γµ Γ°ΓΓ­Γ΅ΓªΓ΅ Γ΅Γ¶Γ΅Γ©Γ±ΓΎΓ­Γ΄Γ΅Γ² Γ°Γ¥Γ±Γ©Γ¬Γ¥Γ΄Γ±Γ©ΓªΓ ΓΓ­Γ΅ Γ¤Γ΅Γ·Γ΄ΓµΓ«ΓΓ¤Γ© Γ΅Γ°ΓΌ Γ΄Γ― Γ΄Γ΅Γ¬Γ°Γ«ΓΌ
 		if(Math.abs(p1.getX()) != N/2 && Math.abs(p1.getY()) != M/2 && Math.abs(p2.getX()) != N/2 && Math.abs(p2.getY()) != M/2) {
 			N = N-2;
 			M = M-2;
 		}
 	}
-//εκτυπώνει τον πίνακα board που χρησιμοποιήσαμε για να εκφράσουμε το ταμπλό του παιχνιδίου 
+//Γ¥ΓªΓ΄ΓµΓ°ΓΎΓ­Γ¥Γ© Γ΄Γ―Γ­ Γ°ΓΓ­Γ΅ΓªΓ΅ board Γ°Γ―Γµ Γ·Γ±Γ§Γ³Γ©Γ¬Γ―Γ°Γ―Γ©ΓΓ³Γ΅Γ¬Γ¥ Γ£Γ©Γ΅ Γ­Γ΅ Γ¥ΓªΓ¶Γ±ΓΓ³Γ―ΓµΓ¬Γ¥ Γ΄Γ― Γ΄Γ΅Γ¬Γ°Γ«ΓΌ Γ΄Γ―Γµ Γ°Γ΅Γ©Γ·Γ­Γ©Γ¤ΓΓ―Γµ 
 	public String[][] getStringRepresentation(Player p1, HeuristicPlayer hp) {
 		String[][] board = new String[M][N];		
 		for (int q=0; q<M; q++) {
