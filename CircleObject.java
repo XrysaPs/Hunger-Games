@@ -1,14 +1,3 @@
-/* Στοιχεία φοιτητών:
-    Τσιμρόγλου Στυλιανός
-        ΑΕΜ: 9468
-        web-mail: stsimrog@ece.auth.gr
-        τηλέφωνο:6977030504
-    Ψυρούκη Χρυσούλα
-        ΑΕΜ:9446
-        web-mail:chrypsyr@ece.auth.gr
-        τηλέφωνο:6987242584
- */
-
 //Adding image to the frame
 import javax.swing.*;
 import java.awt.*;
