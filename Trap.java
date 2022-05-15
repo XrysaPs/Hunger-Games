@@ -1,13 +1,3 @@
-/* Στοιχεία φοιτητών:
-    Τσιμρόγλου Στυλιανός
-        ΑΕΜ: 9468
-        web-mail: stsimrog@ece.auth.gr
-        τηλέφωνο:6977030504
-    Ψυρούκη Χρυσούλα
-        ΑΕΜ:9446
-        web-mail:chrypsyr@ece.auth.gr
-        τηλέφωνο:6987242584
- */
 public class Trap{
 	private int id;
 	private int x;
@@ -16,14 +6,14 @@ public class Trap{
 	private int points;
 
 
-	public Trap() {//κενός constructor
+	public Trap() {//ΓªΓ¥Γ­ΓΌΓ² constructor
 		id=0;
 		x=0;
 		y=0;
 		type="";
 		points=0;
 	}
-	public Trap(int id,int x,int y,String type,int points) {//constructor με ορίσματα
+	public Trap(int id,int x,int y,String type,int points) {//constructor Γ¬Γ¥ Γ―Γ±ΓΓ³Γ¬Γ΅Γ΄Γ΅
 		this.id=id;
 		this.x=x;
 		this.y=y;
@@ -36,14 +26,14 @@ public class Trap{
 		}
 		this.points=points;
 	}
-	public Trap(Trap TrapObject) {//αντικείμενο τύπου Trap
+	public Trap(Trap TrapObject) {//Γ΅Γ­Γ΄Γ©ΓªΓ¥ΓΓ¬Γ¥Γ­Γ― Γ΄Γ½Γ°Γ―Γµ Trap
 		id=TrapObject.id;
 		x=TrapObject.x;
 		y=TrapObject.y;
 		type=TrapObject.type;
 		points=TrapObject.points;
 	}
-	public void setId(int id) {//setters των μεταβλητών της κλάσης 
+	public void setId(int id) {//setters Γ΄ΓΉΓ­ Γ¬Γ¥Γ΄Γ΅ΓΆΓ«Γ§Γ΄ΓΎΓ­ Γ΄Γ§Γ² ΓªΓ«ΓΓ³Γ§Γ² 
 		this.id=id;
 		
 	}
@@ -65,7 +55,7 @@ public class Trap{
 	public void setPoints(int points) {
 		this.points=points;
 		}
-	public int getId() {//getters των μεταβλητών της κλάσης 
+	public int getId() {//getters Γ΄ΓΉΓ­ Γ¬Γ¥Γ΄Γ΅ΓΆΓ«Γ§Γ΄ΓΎΓ­ Γ΄Γ§Γ² ΓªΓ«ΓΓ³Γ§Γ² 
 		return id;
 	}
 	public int getX() {
